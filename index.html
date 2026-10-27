@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Эдуард Багрицкий — Жизнь и творчество</title>
+  <link rel="icon" href="images/iconsite.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="frame-layout">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo-wrap" onclick="loadPage('pages/main.html'); return false;">
+        <img src="images/icon.webp" alt="Эдуард Багрицкий — знак сайта" />
+      </a>
+      <div class="site-title-wrap">
+        <div class="site-title">Эдуард Багрицкий</div>
+        <div class="site-subtitle">Поэт. Одесса. Время.</div>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="#" data-page="main.html" class="active" onclick="loadPage('pages/main.html'); return false;">1. Главная</a></li>
+          <li><a href="#" data-page="biography.html" onclick="loadPage('pages/biography.html'); return false;">2. Биография</a></li>
+          <li><a href="#" data-page="poems.html" onclick="loadPage('pages/poems.html'); return false;">3. Стихи</a></li>
+          <li><a href="#" data-page="quotes.html" onclick="loadPage('pages/quotes.html'); return false;">4. Произведения</a></li>
+          <li><a href="#" data-page="gallery.html" onclick="loadPage('pages/gallery.html'); return false;">5. Галерея</a></li>
+          <li><a href="#" data-page="contact.html" onclick="loadPage('pages/contact.html'); return false;">6. О проекте</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <iframe id="content-frame" src="pages/main.html" title="Содержимое страницы"></iframe>
+  <script src="js/main.js"></script>
+</body>
+</html>
